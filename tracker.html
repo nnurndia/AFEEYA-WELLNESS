@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>WORKOUT TRACKER | AFEEYA WELLNESS</title>
+	
+	<style>
+	  body {
+			font-family: 'Poppins' , sans-serif;
+			background: linear-gradient(135deg, #F8BBD0, #A7C7E7);
+			margin: 0;
+			padding: 0;
+			color: #333;
+		}
+		
+		nav {
+			backrgound-color: #F8BBD0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 25px;
+			padding: 12px 0;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+			position: sticky; 
+			top: 0;
+			z-index: 100;
+		}
+		
+		nav a, .dropbtn {
+			color: #512DA8;
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 16px;
+			transition: 0.3s;
+			padding: 8px 14px;
+			background: none;
+			border: none;
+			cursor: pointer;
+			font-family: 'Poppins', sans-serif;
+		}
+		
+		nav a:hover, .dropbtn:hover {
+			color: #3A1C8E;
+		}
+		
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+		
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #FFF8F9;
+			min-width: 160px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+			border-radius: 8px;
+			z-index: 10;;
+		}
+		
+		.dropdown-content a {
+			color: #512DA8;;
+			padding: 10px 15px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+			transition: 0.3;
+		}
+		
+		.dropdown-content a:hover {
+			background-color: #F8BBD0;
+			color: #3A1C8E;
+		}
+		
+		.show {
+			display: none;
+		}
+		
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		
+		header {
+			text-align: center;
+			padding: 25px 0 10px;
+			color: #512DA8;
+		}
+		
+		header h1 {
+			margin: 0;
+			font-size: 28px;
+		}
+		
+		.section-title {
+			background-color: #FFF8F9;
+			width: 70%;
+			margin: 30px auto;
+			padding: 15px;
+			border-radius: 15px;
+			text-align: center;
+			color: #512DA8;
+			font-size: 24px;
+			font-weight: 600;
+			box-shadow: 0 3px 8px rgba(0,0,0,0,0.15);
+		}
+		
+		.tracker-container {
+			width: 85%;
+			max-width: 900px;
+			margin: 30px auto;
+			background: #FFF8F9;
+			border-radius: 15px;
+			box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+			padding: 20px;
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		
+		th, td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			font-size: 15px;
+		}
+		th {
+			background-color: #E6D5F7;
+			color: #512DA8;
+		}
+		Tr:nth-child(even) {
+			background-color: #F9F5FF;
+		}
+		
+		.add-btn {
+			display: block;
+			width: fit-content;
+			margin: 25px auto 10px;
+			background: linear-gradient(135deg, #A7CE7, #512DA8);
+			padding: 10px 25px;
+			border-radius: 50px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+			box-shadow: 0 3px 10px rgba(81,45, 168,0.3);
+			transition: 0.3s;
+		}
+	
+		
+		.add-btn:hover {
+			transform: scale(1.05);
+			background: linear-gradient(135deg, #F8BBD0, #7357C2);
+		}
+		
+		.quote {
+			background-color: #FFF8F9;
+			text-align: center;
+			width: 80%;
+			margin: 40px auto;
+			border-radius: 15px;
+			padding: 20px;
+			font-style: italic;
+			color: #512DA8;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+		
+		footer {
+			background-color: #F8BBD0;
+			text-align: center;
+			padding: 15px;
+			font-size: 14px;
+			color: #333;
+		}
+	</style>
+</head>
+	
+	<nav>
+	  <a href="index.html">Home</a>
+		
+		<div class="dropdown">
+			<button class="dropbtn" onclick="toggleDropdown('ClassesDropdown')">Classes</button>
+		    <div id="ClassesDropdownl" class="dropdown-content">
+			    <a href="zumba.html">Zumba</a>
+				<a href="yoga.html">Yoga</a>
+				<a href="aerobic.html">Aerobic</a>
+				<a href="pilates.html">Pilates</a>
+			</div>
+		</div>
+		
+		
+		<div class="dropdown">
+			<button class="dropbtn" onclick="toggleDropdown('TipsDropdown')">Tips</button>
+		    <div id="TipsDropdown" class="dropdown-content">
+			    <a href="healthtips.html">Health Tips</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="workout.html">Workout Tracker</a>
+			</div>
+		</div>
+		
+		<a href="package.html">Packages</a>
+		<a href="point-reward.php">Reward</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	
+	<header>
+	  <h1>Afeeya <span style="color: #333;">Wellness</span></h1>
+	</header>
+	
+	<div class="section-title">Workout Progress Tracker</div>
+	
+	<!-- TRACKER TABLE -->
+	<div class="tracker-container">
+	   <table>
+			  <tr>
+				  <th>Day</th>
+				  <th>Workout Type</th>
+				  <th>Duration (Min)</th>
+				  <th>Calorie Burned</th>
+				  <th>Notes</th>
+			  </tr>
+				
+			  <tr>
+				  <td>Monday</td>
+				  <td>Zumba</td>
+				  <td>45</td>
+				  <td>300</td>
+				  <td>Felt energetic</td>
+			  </tr>
+			 
+			   <tr>
+				  <td>Wednesday</td>
+				  <td>Pilates</td>
+				  <td>40</td>
+				  <td>250</td>
+				   <td>Focus on core</td>
+			  </tr>
+		   
+		       <tr>
+				  <td>Tuesday</td>
+				  <td>Aerobic</td>
+				  <td>Yoga</td>
+				  <td>-</td>
+			  </tr>
+		</table>
+	</div>
+	
+	<a href="add-progress.html" class="add-btn">Add Progress</a>
+	
+	<div class="quote">
+	   "Small consistent steps build strength -every drop of sweat brings you close to your goal"
+	</div>
+	
+	<!-- FOOTER-->
+	<footer>
+	     <p>© 2025 Afeeya Wellness | Women's Gym | Designed by Ainnur Nadia</p>
+	</footer>
+
+<body>
+</body>
+</html>
