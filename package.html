@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MEMBERSHIP PACKAGES | AFEEYA WELLNESS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		body {
+			font-family: 'Poppins', sans-serif;
+			background: linear-gradient(135deg, #F8BBD0, #A7C7E7);
+			margin: 0;
+			padding 0;
+			color: #333;
+		}
+		header {
+			background-color: #F8BBD0;
+			padding: 15px 0;
+			text-align: center;
+			color: #512DA8;
+			font-weight: bold;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+		h2 {
+			text-align: center;
+			padding: 40px;
+			color: #512DA8;
+		}
+		.package-container {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 25px;
+			padding: 40px;
+		}
+		.package-box {
+			background: #FFF8F9;
+			border-radius: 15px;
+			width: 200px;
+			padding: 25px;
+			text-align: center;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+			transition: 0.3s;
+			min-heght: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.package-box:hover {
+			transform: translateY(-5px);
+		}
+		.package-box h3 {
+			color: #512DA8;
+			font-size: 22px;
+			margin-bottom: 10px;
+		}
+		.price {
+			font-size: 28px;
+			color: #333;
+			margin-bottom: 15px;
+		}
+		ul {
+			list-style: none;
+			text-align: left;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+		ul li {
+			margin: 8px 0;
+			font-size: 15px;
+		}
+		.btn {
+			display: block;
+			margin: 0 auto;
+			background: linear-gradient(135deg, #512DA8, #7E57C2);
+			color: white;
+			padding: 10px 25px;
+			border-radius: 30px;
+			text-decoration: none;
+			margin-top:  15px;
+			transition: 0.3;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+			box-shadow: 0 3px 10px rgba(81, 45, 168,0.3);
+			cursor: pointer;
+		}
+		.btn:hover {
+			background: linear-gradient(135deg, #A7C7E7, #512DA8);
+			transform: scale(1.05);
+			box-shadow: 0 5px 20px rgba(81, 45, 168, 0.5);
+		}
+		
+		.home-btn {
+			display: block;
+			width: fit-content;
+			margin: 30px auto;
+			background: linear-gradient(135deg, #A7C7E7, #512DA8);
+			padding: 12px 30px;
+			border-radius: 50px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+			box-shadow: 0 3px 12px rgba(81,45,168,0.3);
+			transition: 0.3s;
+		}
+		.home-btn:hover {
+			transform: scale(1.05);
+			background: linear-gradient(135deg, #F8BBD0, #7E57C2);
+			box-shadow: 0 5px 20px rgba(81,45,168,0.5);
+		}
+		footer {
+			background-color: #F8BBD0;
+			text-align: center;
+			padding: 15px;
+			font-size: 14px;
+			color: #333;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		<h1>Afeeya <span style="color:#333;">Wellness</span></h1>
+	</header>
+	
+	<h2>Choose Your Membership Package</h2>
+	
+	<div class="package-container">
+	  <div class="package-box">
+		<h3>Basic Plan</h3>
+		<p class="price">RM59 / month</p>
+		  <ul>
+		    <li>✔ Access to all gym equipment</li>
+			<li>✔ Morning and evening sessions</li>
+			<li>✔ Free diet tips newsletter</li>
+		  </ul>
+		  <button class="btn" onclick="selectPackages('Basic Plan')">Select Plan</button>
+		</div>
+		
+		<div class="package-box">
+		<h3>Premium Plan</h3>
+		<p class="price">RM99 / month</p>
+		  <ul>
+		    <li>✔ Unlimited class booking</li>
+			<li>✔ Personal trainer guidance</li>
+			<li>✔ Free Afeeya Wellness T-shirt</li>
+		  </ul>
+		  <button class="btn" onclick="selectPackages('Premium Plan')">Select Plan</button>
+		</div>
+		
+		<div class="package-box">
+		<h3>VIP Plan</h3>
+		<p class="price">RM149 / month</p>
+		  <ul>
+		    <li>✔ All premium benefits</li>
+			<li>✔ Private locker & lounge access</li>
+			<li>✔ Free nutritionist consultation</li>
+		  </ul>
+		  <button class="btn"  onclick="selectPackages('VIP Plan')">Select Plan</button>
+		</div>
+	</div>
+	
+	<a href="index.html" class="home-btn">Back to Homepage</a>
+	
+	<footer>
+	   <p>© 2025 Afeeya Wellness | Women's Gym | Designed by Ainnur Nadia</p>
+	</footer>
+	
+	<script>
+	function selectPackages(plan) {
+		window.location.href = "form.php?package=" + encodeURIComponent(plan);	
+	}
+	</script>
+	
+</body>
+</html>
