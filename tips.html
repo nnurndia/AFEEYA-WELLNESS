@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIPS | AFEEYA WELLNESS</title>
+	
+	<style>
+	  body {
+			font-family: 'Poppins' , sans-serif;
+			background: linear-gradient(135deg, #F8BBD0, #A7C7E7);
+			margin: 0;
+			padding: 0;
+			color: #333;
+		}
+		
+		nav {
+			backrgound-color: #F8BBD0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 12px 0;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+			position: sticky; 
+			top: 0;
+			z-index: 100;
+		}
+		
+		nav a {
+			color: #512DA8;
+			text-decoration: none;
+			font-weight: 600;
+			margin: 0 18px;
+			font-size: 16px;
+			transition: 0.3s;
+		}
+		
+		nav a:hover {
+			color: #512DA8;
+			text-decoration: underline;
+		}
+		
+		header {
+			text-align: center;
+			padding: 25px 0 10px;
+			color: #512DA8;
+		}
+		
+		header h1 {
+			margin: 0;
+			font-size: 28px;
+		}
+		
+		.section-title {
+			background-color: #FFF8F9;
+			width: 70%;
+			margin: 30px auto;
+			padding: 15px;
+			border-radius: 15px;
+			text-align: center;
+			color: #512DA8;
+			font-size: 24px;
+			font-weight: 600;
+			box-shadow: 0 3px 8px rgba(0,0,0,0,0.15);
+		}
+		
+		.category-container {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 30px;
+			padding: 20px;
+		}
+		
+		.category-card {
+			background: #FFF8F9;
+			border-radius: 15px;
+			width: 280px;
+			text-align: center;
+			box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+			transition: transform 0.5 ease, box-shadow 0.5s ease;
+		}
+		
+		.category-card:hover {
+			transform: translate(-12px) scale(1.03);
+			box-shadow: 0 6px 18px rgba(0,0,0,0,0.25);
+		}
+		
+		.category-card img {
+			width: 100%;
+			height: 300px;
+			border-radius: 12px;
+			object-fit: cover;
+			margin-bottom: 15px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+		}
+		
+		.category-card h1 {
+			color: #512DA8;
+			font-size: 18px;
+			margin-bottom: 8px;
+		}
+		
+		.category-card p {
+			font-size: 14px;
+			color: #555;
+			margin-bottom: 15px;
+		}
+		
+		.btn {
+			display: inline-block;
+			background: linear-gradient(135deg, #512DA8, #7E57C2);
+			color: white;
+			padding: 10px 25px;
+			border-radius: 30px;
+			text-decoration: none;
+			margin-top:  15px;
+			transition: 0.3;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+			box-shadow: 0 3px 10px rgba(81, 45, 168,0.3);
+			cursor: pointer;
+		}
+		
+		.btn:hover {
+			background: linear-gradient(135deg, #A7C7E7, #512DA8);
+			transform: scale(1.05);
+			box-shadow: 0 5px 20px rgba(81, 45, 168, 0.5);
+		}
+		
+		.home-btn {
+			display: block;
+			width: fit-content;
+			margin: 30px auto;
+			background: linear-gradient(135deg, #A7C7E7, #512DA8);
+			padding: 12px 30px;
+			border-radius: 50px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+			box-shadow: 0 3px 12px rgba(81,45,168,0.3);
+			transition: 0.3s;
+		}
+		.home-btn:hover {
+			transform: scale(1.05);
+			background: linear-gradient(135deg, #F8BBD0, #7E57C2);
+			box-shadow: 0 5px 20px rgba(81,45,168,0.5);
+		}
+		
+		footer {
+			background-color: #F8BBD0;
+			text-align: center;
+			padding: 15px;
+			font-size: 14px;
+			color: #333;
+		}
+		
+	</style>
+</head>
+
+<body>
+	
+	<!-- NAVBAR -->
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="classes.html">Classes</a>
+		<a href="package.html">Packages</a>
+		<a href="point-reward.html">Rewards</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	
+	<header>
+	  <h1>Afeeya <span style="color: #333;">Wellness</span></h1>
+	</header>
+	
+	<div class="section-title">Explore Wellness & Health Tips</div>
+	
+	<!-- Tips Category Cards -->
+	<div class="category-container">
+	
+	  <div class="category-card">
+		  <img src="healthTips.jpg" alt="Health Tips">
+		  <h3>Health Tips</h3>
+		  <p>Simple daily wellness advice to boost your energy , balance and peace of mind.</p>
+		  <a href="health-tips.html" class="btn">View Tips</a>
+	  </div>
+		
+	  
+	  <div class="category-card">
+		  <img src="nutrition.jpg" alt="Nutrition Tips">
+		  <h3>Nutrition</h3>
+		  <p>Discover healthy eating habits, meal plan and nutrition facts for Muslimah lifestyle.</p>
+		  <a href="nutrition.html" class="btn">Explore Nutrition</a>
+	  </div>
+		
+		
+	  <div class="category-card">
+		  <img src="workout.jpg" alt="Workout Tracker">
+		  <h3>Workout Tracker</h3>
+		  <p>Track your daily exercise, set goals and monitor your progress easily.</p>
+		  <a href="tracker.html" class="btn">Start Tracking</a>
+	  </div>
+		
+	</div>
+	
+	<!-- HOME BUTTON -->
+	<a href="index.html" class="home-btn">Back to Homepage</a>
+	
+	<!-- FOOTER-->
+	<footer>
+	     <p>© 2025 Afeeya Wellness | Women's Gym | Designed by Ainnur Nadia</p>
+	</footer>
+	
+</body>
+</html>
