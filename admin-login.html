@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN-LOGIN | AFEEYA WELLNESS</title>
+	
+	<style>
+		body {
+			font-family: 'poppins', sans-serif;
+			background: linear-gradient(135deg, #F8BBD0, #A7C7E7);
+			display: flex;
+			justify-content: center;
+			align-item:s: center;
+			height: 100vh;
+			margin: 0;
+		}
+		
+		header {
+			background-color: #F8BBD0;
+			padding: 15px;
+			text-align: center;
+			font-weight: bold;
+			color: #512DA8;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+	
+		.login-container {
+			width: 520px;
+			margin: 80px auto;
+			background-color: #FFF8F9;
+			padding: 40px 50px;
+			border-radius: 15px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+			transitions: 0.3s;;
+		}
+		
+		.login-container:hover {
+			transform: scale(1.01);
+		}
+		h2 {
+			text-align: center;
+			color: #512DA8;
+			margin-bottom: 20px;
+		}
+		label {
+			display: block;
+			font-weight: 500;
+			margin-bottom: 5px;
+		}
+		
+		input[type="email"],
+		input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-family: 'poppins', sans-serif;
+		}
+		.btn {
+			width: 100%;
+			background-color: #512DA8;
+			color: white;
+			padding: 14px;
+			border: none;
+			border-radius: 10px;
+			font-size: 16px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: 0.3;
+		}
+		.btn:hover {
+			background-color: #3A1C8E;
+			transform: scale(1.03);
+		}
+		
+		.home-btn {
+			display: block;
+			width: fit-content;
+			margin: 40px auto;
+			background: linear-gradient(135deg, #A7C7E7, #512DA8);
+			padding: 12px 30px;
+			border-radius: 50px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+			box-shadow: 0 3px 12px rgba(81,45,168,0.3);
+			transition: 0.3s;
+		}
+		.home-btn:hover {
+			transform: scale(1.05);
+			background: linear-gradient(135deg, #F8BBD0, #7E57C2);
+		}
+		
+		p {
+			text-align: center;
+			font-size: 14px;
+			margin-top: 15px;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<!-- HEADER -->
+	<header>
+		<h1>Afeeya <span style="color:#333;">Wellness</span></h1>
+	</header>
+	
+	<!-- LOGIN FORM -->
+	<div class="login-container">
+		<h2>Login</h2>
+		<form action="admin.html" method="POST">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email" required>
+			
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="Enter your password" required>
+			
+			<button type="submit" class="btn">Login</button>
+		</form>
+		
+		<!-- HOMEPAGE BUTTON -->
+	    <a href="admin.html" class="home-btn">Back to Homepage</a>
+	</div>
+</body>
+</html>
